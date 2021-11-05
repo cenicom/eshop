@@ -38,6 +38,9 @@
   <script src="{{ asset('assets/js/core/bootstrap-material-design.min.js') }}"></script>
   <script src="{{ asset('assets/js/plugins/perfect-scrollbar.jquery.min.js') }}"></script>
 
+  <!--   sweetalert.min.js   -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
   @yield('scripts')
 </body>
 </html>
