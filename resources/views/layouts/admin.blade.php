@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
 
     <!-- Styles -->
-    <link href="{{ asset('admin/css/material-dashboard.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/material-dashboard.css') }}" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
@@ -33,10 +33,10 @@
 
     <!-- Scripts -->
     <!--   Core JS Files   -->
-  <script src="{{ asset('admin/js/core/jquery.min.js') }}"></script>
-  <script src="{{ asset('admin/js/core/popper.min.js') }}"></script>
-  <script src="{{ asset('admin/js/core/bootstrap-material-design.min.js') }}"></script>
-  <script src="{{ asset('admin/js/plugins/perfect-scrollbar.jquery.min.js') }}"></script>
+  <script src="{{ asset('assets/js/core/jquery.min.js') }}"></script>
+  <script src="{{ asset('assets/js/core/popper.min.js') }}"></script>
+  <script src="{{ asset('assets/js/core/bootstrap-material-design.min.js') }}"></script>
+  <script src="{{ asset('assets/js/plugins/perfect-scrollbar.jquery.min.js') }}"></script>
 
   @yield('scripts')
 </body>
