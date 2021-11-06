@@ -6,22 +6,34 @@
     </div>
     <div class="sidebar-wrapper">
         <ul class="nav">
-            <li class="nav-item active  ">
+            <li class="nav-item {{ Request::is('dashboard') ? 'active':''; }}  ">
                 <a class="nav-link" href="/">
                     <i class="material-icons">dashboard</i>
                     <p>Dashboard</p>
                 </a>
             </li>
-            <li class="nav-item ">
+            <li class="nav-item {{ Request::is('categories') ? 'active':''; }} ">
                 <a class="nav-link" href="{{ url('categories') }}">
-                    <i class="material-icons">person</i>
+                    <i class="material-icons">ac_unit</i>
                     <p>Categorias</p>
                 </a>
             </li>
-            <li class="nav-item ">
+            <li class="nav-item {{ Request::is('add-category') ? 'active':''; }}">
                 <a class="nav-link" href="{{ url('add-category') }}">
-                    <i class="material-icons">person</i>
+                    <i class="material-icons">apps</i>
                     <p>Agregar Categoria</p>
+                </a>
+            </li>
+            <li class="nav-item {{ Request::is('products') ? 'active':''; }} ">
+                <a class="nav-link" href="{{ url('products') }}">
+                    <i class="material-icons">personal_video</i>
+                    <p>Productos</p>
+                </a>
+            </li>
+            <li class="nav-item {{ Request::is('add-product') ? 'active':''; }}">
+                <a class="nav-link" href="{{ url('add-product') }}">
+                    <i class="material-icons">pie_chart</i>
+                    <p>Agregar Producto</p>
                 </a>
             </li>
             <li class="nav-item ">
